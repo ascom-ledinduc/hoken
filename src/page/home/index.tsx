@@ -1,18 +1,11 @@
-import {
-  Button,
-  Divider,
-  Form,
-  Input,
-  Select,
-  Space,
-  Tooltip,
-  Typography,
-} from "antd";
-import InputForm from "../../common/home/form/inputForm";
-import Result from "../../common/home/result/Result";
-const { Option } = Select;
+import { Divider } from "antd";
+import InputForm from "../../components/home/form/inputForm";
+import Result from "../../components/home/result/Result";
+import { useState } from "react";
 
 const Home = () => {
+  const [searchValue, setSearchValue] = useState();
+
   return (
     <>
       <div className="hnh-em py-5 profile-section">
@@ -24,15 +17,15 @@ const Home = () => {
             </h1>
           </Divider>
         </div>
-        <div>
+        <div style={{ paddingLeft: "5%", paddingRight: "5%" }}>
           <div className="khuyen-mai">
             <button className="title" id="add-employee-btn">
               Nhập thông tin của bạn
             </button>
-            <InputForm />
+            <InputForm setSearchValue={setSearchValue} />
           </div>
+          {searchValue && <Result searchValue={searchValue} />}
         </div>
-        <Result />
       </div>
     </>
   );
