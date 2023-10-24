@@ -84,7 +84,9 @@ const InputForm = ({ setSearchValue }: Prop) => {
           <Form.Item
             name="tuoi"
             noStyle
-            rules={[{ required: true, message: "Tuổi is required" }]}
+            rules={[
+              { required: true, message: "Bắt buộc nhập ngày tháng năm sinh" },
+            ]}
           >
             <Input
               style={{ width: 160 }}
@@ -156,10 +158,10 @@ const InputForm = ({ setSearchValue }: Prop) => {
               ※Lưu ý
               <br />
               Gói 1万5000円, 3万円 chỉ áp dụng khi nhập viện 5000円/ngày (chọn ở
-              mực số 5)
+              mục số 5)
               <br />
               Gói 3万円, 6万円 chỉ áp dụng khi nhập viện 10000円/ngày (chọn ở
-              mực số 5)
+              mục số 5)
             </>
           }
         />

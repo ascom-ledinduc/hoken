@@ -5,7 +5,7 @@ export const AgeCount = (birthDay: string) => {
   const day = datPart[2];
   const nowDay = new Date();
   let age = nowDay.getFullYear() - parseInt(year);
-  console.log(nowDay.getMonth());
+
   if (
     parseInt(month) < nowDay.getMonth() ||
     (parseInt(month) === nowDay.getMonth() + 1 &&
