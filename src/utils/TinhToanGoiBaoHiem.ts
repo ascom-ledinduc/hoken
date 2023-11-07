@@ -27,7 +27,7 @@ export const TinhToanGoiBaoHiem = (value: any) => {
   let HoTroCho7BenhMuoiNam = 0;
   let NhanNgayKhiNhapVienMuoiNam = 0;
   let mienTriXa = 0;
-  // Toạ độ của Mức hỗ trợ NHẬN NGAY khi nhập viện y1
+  // Toạ độ của Khi nhập viện được hỗ trợ
 
   if (value.baoVeChoBaBenhLon === "co") {
     mienTriXa = 78;

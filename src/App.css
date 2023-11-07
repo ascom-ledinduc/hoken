@@ -795,3 +795,13 @@ i.fa.fa-phone-square {
   left: 20px;
   padding: 24px 24px;
 }
+
+.form-label-custom .ant-form-item-label label {
+  font-size: 24px;
+}
+.ant-select-single .ant-select-selector {
+  font-size: 16px;
+}
+.ant-input {
+  font-size: 16px;
+}
